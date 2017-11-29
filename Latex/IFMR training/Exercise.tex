@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+\graphicspath{"C:/Users/Sakshi/Dropbox/IFMR Summit/"}
+
+\begin{document}
+	\title{\textbf{\LaTeX - Exercise} \\
+	\textbf{\small{\emph{IFMR Summit 2015}}}}
+	
+	\author{XYZ}
+	\maketitle
+	
+	\begin{center}
+	This is an exercise to understand the basic functions of \LaTeX. 
+	\end{center}
+	
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	
+\section{Equations}
+	\begin{enumerate}
+		\item \textbf{Single Equation}
+			\begin{equation}
+			income =  \alpha + \beta_1 . education + \beta_2 . age + \delta . gender\_dummy + \epsilon
+			\end{equation}
+			
+		\item \textbf{Long equation}
+			\begin{multline*}
+					income =  \alpha + \beta_1 . education + \beta_2 . age + \delta . gender\_dummy\\
+					+ \delta_u . urban + \delta_r . rural + \epsilon
+			\end{multline*}
+			
+		\item \textbf{Split environment}
+		\begin{equation}
+		\begin{split}
+			z &= x + x + x + y + y \\
+			  &= 3x + 2y
+		\end{split}
+		\end{equation}
+		
+		\item \textbf{Align Environment}
+		
+			\begin{align*}
+			 3x + 2y &= 34 \\
+			 2x + y  &= 20 
+			\end{align*}
+	
+				\item \textbf{Matrix} \\
+				
+				\[
+				\begin{bmatrix}
+					x & y \\
+					z & v
+				\end{bmatrix}
+				\]
+				
+	\end{enumerate}
+	
+\section{Tables}
+	\begin{tabular}{|c|c|c|}
+	\hline Prisoner 1/Prisoner 2 & Confess & Deny \\ 
+	\hline Confess & $(-3,-3)$ & $(-1,-5)$ \\ 
+	\hline Deny & $(-5,-1)$ & $(0,0)$ \\ 
+	\hline 
+	\end{tabular} 
+	
+\newpage	
+\section{STATA Output}
+	\begin{itemize}
+	\item \textbf{Regression output}
+		\input{"C:/Users/Sakshi/Dropbox/IFMR Summit/latex_reg_sample.tex"}
+		
+	\item \textbf{Data Matrix} \\
+		\input{"C:/Users/Sakshi/Dropbox/IFMR Summit/mat_example.tex"}
+		
+	\newpage	
+	\item \textbf{Graph} \\
+	\\
+		  \includegraphics[height=3in]{lexp_gnp1.eps} 	
+	
+	\end{itemize}
+	
+	
+\end{document}
