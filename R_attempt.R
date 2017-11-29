@@ -12,6 +12,8 @@ df = read_excel("D:/Dropbox/PJ_SEFC/16 Skills Dept/Sample exercise.xlsx", sheet=
 #to see data like browse
 fix(df)
 
+
+
 #to get varlist
 names(df)
 
